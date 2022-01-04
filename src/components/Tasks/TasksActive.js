@@ -1,14 +1,8 @@
 import React from "react";
-import TaskItem from "./TaskItem";
+import TasksActiveList from "./TasksActiveList";
 
 const TasksActive = (props) => {
-  return (
-    <div>
-      {props.tasks.map((task) => (
-        <TaskItem title={task.title} date={task.date} key={task.id} />
-      ))}
-    </div>
-  );
+  return <TasksActiveList tasks={props.tasks} />;
 };
 
 export default TasksActive;

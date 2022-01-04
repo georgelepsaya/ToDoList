@@ -1,5 +1,6 @@
 import React from "react";
 import Tasks from "./components/Tasks/Tasks";
+import NewTask from "./components/NewTask/NewTask";
 
 const DUMMY_TASKS = [
   {
@@ -21,7 +22,13 @@ const DUMMY_TASKS = [
 
 const App = () => {
   const tasks = DUMMY_TASKS;
-  return <Tasks items={tasks} />;
+  return (
+    <div>
+      <h1 style={{ "text-align": "center" }}>ToDo App</h1>
+      <NewTask />
+      <Tasks items={tasks} />
+    </div>
+  );
 };
 
 export default App;
