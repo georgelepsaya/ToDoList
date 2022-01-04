@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Tasks from "./components/Tasks/Tasks";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const DUMMY_TASKS = [
+  {
+    id: "t1",
+    date: new Date(2022, 0, 4),
+    title: "Clean my room",
+  },
+  {
+    id: "t2",
+    date: new Date(2022, 0, 4),
+    title: "Do the groceries",
+  },
+  {
+    id: "t3",
+    date: new Date(2022, 0, 4),
+    title: "Do homework",
+  },
+];
+
+const App = () => {
+  const tasks = DUMMY_TASKS;
+  return <Tasks items={tasks} />;
+};
 
 export default App;
