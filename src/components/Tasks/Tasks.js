@@ -5,13 +5,13 @@ import "./Tasks.css";
 import TasksCompleted from "./TasksCompleted";
 
 const Tasks = (props) => {
-  console.log(props.items);
   const [tasks, setTasks] = useState(props.items);
   console.log(tasks);
 
   const [activeTasks, setActiveTasks] = useState(
     tasks.filter((task) => task.active === true)
   );
+
   const [completedTasks, setCompletedTasks] = useState(
     tasks.filter((task) => task.active === false)
   );
@@ -26,6 +26,7 @@ const Tasks = (props) => {
     setActiveTasks(tasks.filter((task) => task.active === true));
     setCompletedTasks(tasks.filter((task) => task.active === false));
   };
+
   return (
     <Card className="tasks">
       <h2>Active Tasks</h2>
