@@ -12,7 +12,9 @@ const TaskItem = (props) => {
     <Card className="task-item">
       <input
         type="checkbox"
-        className="task-item__check"
+        className={`${"task-item__check"} ${
+          !props.isActive && "task-item__checked"
+        }`}
         onClick={clickHandler}
       />
       <h2>{props.title}</h2>
