@@ -1,0 +1,28 @@
+.new-task {
+  background-color: #fafcff;
+  border: 2px solid #d1e1f9;
+  padding: 1rem;
+  margin: 2rem auto;
+  width: 50rem;
+  max-width: 95%;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 2px 2px rgba(8, 4, 69, 0.071);
+}
+
+.new-task button {
+  font: inherit;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  border: 2px solid #cedef4;
+  background-color: #e3eefe;
+  color: #1b1678;
+  border-radius: 12px;
+  margin-right: 1rem;
+}
+
+.new-task button:hover,
+.new-task button:active {
+  background-color: #cedef4;
+  border-color: #cedef4;
+}
