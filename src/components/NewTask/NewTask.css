@@ -26,14 +26,3 @@
   background-color: #cedef4;
   border-color: #cedef4;
 }
-
-.new-task button.alternative {
-  color: #220131;
-  border-color: transparent;
-  background-color: transparent;
-}
-
-.new-task button.alternative:hover,
-.new-task button.alternative:active {
-  background-color: #ddb3f8;
-}
