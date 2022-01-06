@@ -6,7 +6,6 @@ import TasksCompleted from "./TasksCompleted";
 
 const Tasks = (props) => {
   const tasks = props.items;
-  console.log(tasks);
 
   const [activeTasks, setActiveTasks] = useState(
     tasks.filter((task) => task.active === true)
