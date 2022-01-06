@@ -20,6 +20,8 @@ const TaskForm = (props) => {
       date: new Date(enteredDate),
     };
 
+    console.log(taskData);
+
     props.onSaveTaskData(taskData);
     setEnteredTitle("");
     setEnteredDate("");

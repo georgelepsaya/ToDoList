@@ -5,7 +5,7 @@ import "./Tasks.css";
 import TasksCompleted from "./TasksCompleted";
 
 const Tasks = (props) => {
-  const [tasks, setTasks] = useState(props.items);
+  const tasks = props.items;
   console.log(tasks);
 
   const [activeTasks, setActiveTasks] = useState(
@@ -22,7 +22,6 @@ const Tasks = (props) => {
         task.active = !task.active;
       }
     });
-    setTasks(tasks);
     setActiveTasks(tasks.filter((task) => task.active === true));
     setCompletedTasks(tasks.filter((task) => task.active === false));
   };
